@@ -1,1 +1,7 @@
-FROM ghcr.io/n8n-io/n8n:latest
+FROM ghcr.io/n8n-io/n8n:1.50.0
+
+ENV NODE_OPTIONS=--max-old-space-size=400
+ENV N8N_RUNNERS_ENABLED=false
+ENV N8N_AI_ENABLED=false
+ENV EXECUTIONS_MODE=regular
+ENV N8N_CONCURRENCY_PRODUCTION_LIMIT=1
