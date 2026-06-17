@@ -1,4 +1,4 @@
-FROM ghcr.io/n8n-io/n8n:1.80.0
+FROM ghcr.io/n8n-io/n8n:1.50.0
 
 ENV NODE_OPTIONS=--max-old-space-size=400
 ENV N8N_RUNNERS_ENABLED=false
